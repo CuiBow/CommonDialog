@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/cuibowen/AndroidStudioProjects/CommonDialog/common-dialogs/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e444b6906332988a2c1863028fb593636cdfcd77">
+        <dex dex="/Users/cuibowen/AndroidStudioProjects/CommonDialog/app/build/intermediates/pre-dexed/debug/classes_529793c4a5d2c3b30439cda2c4452a6666b07f26.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cuibowen/.android/build-cache/aedaf06ff5bac601bb168119626bf8d1317587b3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a1ad7415919c989c1b72dc3b3d5d2f1429781c02">
+        <dex dex="/Users/cuibowen/AndroidStudioProjects/Animatior/app/build/intermediates/pre-dexed/debug/classes_2501ec7654510ba5e895f8acc65a7b82d2f95d67.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/cuibowen/AndroidStudioProjects/Animatior/common-dialogs/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e444b6906332988a2c1863028fb593636cdfcd77">
+        <dex dex="/Users/cuibowen/AndroidStudioProjects/Animatior/app/build/intermediates/pre-dexed/debug/classes_a038af049b2f243cf0e9870e7b364c0a401ec9ab.jar" />
+    </item>
+
+</items>

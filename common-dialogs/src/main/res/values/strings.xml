@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">common-dialogs</string>
+
+
+    <string name="update_content">正在努力下载新版本,请稍后</string>
+
+    <string name="buy_content">确认要购买吗</string>
+
+
+</resources>

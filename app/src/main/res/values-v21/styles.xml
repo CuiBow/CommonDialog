@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="BaseAppTheme" parent="android:Theme.Material">
+        <!-- 启用动画 -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+        <!-- 进入退出动画 -->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+        <item name="android:windowReturnTransition">@android:transition/explode</item>
+        <item name="android:windowReenterTransition">@android:transition/explode</item>
+        // 尽快开始进入转换
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+
+        <!-- 共享元素动画 -->
+        <item name="android:windowSharedElementEnterTransition">
+            @android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">
+            @android:transition/move</item>
+        <item name="android:windowSharedElementReturnTransition">
+            @android:transition/move</item>
+        <item name="android:windowSharedElementReenterTransition">
+            @android:transition/move</item>
+        <item name="android:windowSharedElementsUseOverlay">true</item>
+
+
+    </style>
+
+</resources>
