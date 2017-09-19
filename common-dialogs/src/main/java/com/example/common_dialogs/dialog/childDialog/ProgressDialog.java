@@ -58,8 +58,8 @@ public class ProgressDialog extends BaseDialog implements View.OnClickListener{
         addSecondView(contentView);
 
 
-        progressView=findViewById(R.id.progress_view);
-        containerInfo=findViewById(R.id.container_info);
+        progressView= (ProgressView) findViewById(R.id.progress_view);
+        containerInfo= (LinearLayout) findViewById(R.id.container_info);
 
 
         if (isforced){
@@ -72,8 +72,8 @@ public class ProgressDialog extends BaseDialog implements View.OnClickListener{
             View footView=LayoutInflater.from(context).inflate(R.layout.foot_view,null);
             addThirdView(footView);
 
-            cancal=findViewById(R.id.cancal);
-            click=findViewById(R.id.click);
+            cancal= (TextView) findViewById(R.id.cancal);
+            click= (TextView) findViewById(R.id.click);
             cancal.setOnClickListener(this);
             click.setOnClickListener(this);
 
