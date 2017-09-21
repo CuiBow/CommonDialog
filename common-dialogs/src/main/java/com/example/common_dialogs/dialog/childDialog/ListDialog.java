@@ -61,13 +61,13 @@ public class ListDialog<T> extends BaseDialog implements View.OnClickListener{
         View footView=LayoutInflater.from(context).inflate(R.layout.foot_view,null);
         addThirdView(footView);
 
-        cancal= (TextView) findViewById(R.id.cancal);
-        click= (TextView) findViewById(R.id.click);
+        cancal=findViewById(R.id.cancal);
+        click=findViewById(R.id.click);
         cancal.setOnClickListener(this);
         click.setOnClickListener(this);
 
 
-        listView= (ListView) findViewById(R.id.list_view);
+        listView=findViewById(R.id.list_view);
     }
 
     public void setListAdapter(List<HashMap<String,String>> list){

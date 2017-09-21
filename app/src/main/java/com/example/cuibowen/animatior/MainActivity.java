@@ -87,11 +87,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 List< HashMap<String,String>> list=new ArrayList();
 
                 HashMap<String,String> map=new HashMap<>();
-                map.put("content","同仁堂撒哒哒哒哒哒,最多购买5盒");
-
+                map.put("content","同仁堂撒哒哒哒哒哒");
+                map.put("canBuyCount","5");
                 HashMap<String,String> map2=new HashMap<>();
-                map2.put("content","同仁堂撒哒哒哒哒哒,最多购买5盒");
-
+                map2.put("content","同仁堂撒哒哒哒哒哒");
+                map2.put("canBuyCount","10");
                 list.add(map);
                 list.add(map2);
 

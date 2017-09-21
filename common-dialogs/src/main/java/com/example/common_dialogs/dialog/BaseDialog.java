@@ -39,9 +39,9 @@ public abstract class BaseDialog extends Dialog {
         View view = inflater.inflate(R.layout.base_item, null);
         setContentView(view);
 
-        firstView= (LinearLayout) findViewById(R.id.first_item);
-        secondView= (LinearLayout) findViewById(R.id.second_item);
-        thirdView= (LinearLayout) findViewById(R.id.third_item);
+        firstView=findViewById(R.id.first_item);
+        secondView=findViewById(R.id.second_item);
+        thirdView=findViewById(R.id.third_item);
 
     }
 

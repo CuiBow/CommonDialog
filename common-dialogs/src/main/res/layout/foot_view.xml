@@ -23,10 +23,10 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/shape_foot_left"
+                android:background="@drawable/selector_dialog_left_btn"
                 android:gravity="center"
                 android:text="取消"
-                android:textColor="#1aa98c"
+                android:textColor="@drawable/selector_text"
                 android:textSize="16.0dip" />
             <View
                 android:background="#e0e0e0"
@@ -40,10 +40,10 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@drawable/shape_foot_right"
+                android:background="@drawable/selector_dialog_right_btn"
                 android:gravity="center"
                 android:text="确认"
-                android:textColor="#1aa98c"
+                android:textColor="@drawable/selector_text"
                 android:textSize="16.0dip" />
 
         </LinearLayout>
