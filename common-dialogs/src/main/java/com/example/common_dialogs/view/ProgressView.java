@@ -159,13 +159,6 @@ public class ProgressView extends View {
         }else if (valueInt >= 100) {
 
         } else if (valueInt > 0 && valueInt < 100) {
-//            if ((currentProgress + padding + ProgressUtils.dp2px(context,10)+rocket.getWidth())<=mWidth - padding*2){
-//
-//               // canvas.drawBitmap(rocket, currentProgress + padding + ProgressUtils.dp2px(context,10), mHeight / 2-rocket.getHeight()/2, rocketPaint);
-//
-//            }else{
-//                canvas.drawBitmap(rocket,null,new RectF(currentProgress + padding + ProgressUtils.dp2px(context,10),mHeight / 2-rocket.getHeight()/2,mWidth - padding*2,mHeight / 2-rocket.getHeight()/2+rocket.getHeight()),rocketPaint);
-//            }
 
              canvas.drawBitmap(rocket,  currentProgress + padding + ProgressUtils.dp2px(context,10), mHeight / 2-rocket.getHeight()/2, rocketPaint);
         }

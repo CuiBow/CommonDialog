@@ -64,13 +64,17 @@ public class ProgressDialog extends BaseDialog implements View.OnClickListener{
 
         if (isforced){
             setCancelable(false);
-            containerInfo.setBackgroundResource(R.drawable.shape_dialog_bg_noborder);
+            containerInfo.setBackgroundResource(R.drawable.shape_dialog_bg_border);
 
         }else{
+
+            containerInfo.setBackgroundResource(R.drawable.shape_dialog_bg_noborder);
 
             setCancelable(true);
             View footView=LayoutInflater.from(context).inflate(R.layout.foot_view,null);
             addThirdView(footView);
+
+
 
             cancal= (TextView) findViewById(R.id.cancal);
             click= (TextView) findViewById(R.id.click);
