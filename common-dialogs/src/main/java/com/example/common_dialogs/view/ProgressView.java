@@ -9,9 +9,12 @@ import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.graphics.RectF;
 import android.graphics.Shader;
+import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
@@ -79,7 +82,7 @@ public class ProgressView extends View {
         //关闭物理加速
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         //基本设置
-        padding = ProgressUtils.dp2px(context,20);
+        padding = ProgressUtils.dp2px(context,0);
         textSize = ProgressUtils.sp2px(context,22);
         //画笔
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -156,7 +159,15 @@ public class ProgressView extends View {
         }else if (valueInt >= 100) {
 
         } else if (valueInt > 0 && valueInt < 100) {
-            canvas.drawBitmap(rocket, currentProgress + padding + ProgressUtils.dp2px(context,10), mHeight / 2-rocket.getHeight()/2, rocketPaint);
+//            if ((currentProgress + padding + ProgressUtils.dp2px(context,10)+rocket.getWidth())<=mWidth - padding*2){
+//
+//               // canvas.drawBitmap(rocket, currentProgress + padding + ProgressUtils.dp2px(context,10), mHeight / 2-rocket.getHeight()/2, rocketPaint);
+//
+//            }else{
+//                canvas.drawBitmap(rocket,null,new RectF(currentProgress + padding + ProgressUtils.dp2px(context,10),mHeight / 2-rocket.getHeight()/2,mWidth - padding*2,mHeight / 2-rocket.getHeight()/2+rocket.getHeight()),rocketPaint);
+//            }
+
+             canvas.drawBitmap(rocket,  currentProgress + padding + ProgressUtils.dp2px(context,10), mHeight / 2-rocket.getHeight()/2, rocketPaint);
         }
     }
     //绘制百分比
@@ -185,7 +196,9 @@ public class ProgressView extends View {
         if (valueInt==0){
 
         }else{
-            canvas.drawRoundRect(padding + 2, 0 , currentProgress + padding - 2, mHeight - 4, mHeight, mHeight, progressPaint);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                canvas.drawRoundRect(padding + 2, 0 , currentProgress + padding - 2, mHeight - 4, mHeight, mHeight, progressPaint);
+            }
         }
 
     }
@@ -193,7 +206,9 @@ public class ProgressView extends View {
     //绘制背景
     private void drawBackground(Canvas canvas) {
 
-        canvas.drawRoundRect(padding, 0, mWidth - padding, mHeight, mHeight, mHeight, backPaint);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            canvas.drawRoundRect(padding, 0, mWidth - padding, mHeight, mHeight, mHeight, backPaint);
+        }
     }
 
 
