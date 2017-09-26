@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.imageView:
                 animator1(imageView);
 
-                final ProgressDialog dialogs=new ProgressDialog(MainActivity.this,false);
+                final ProgressDialog dialogs=new ProgressDialog(MainActivity.this,true);
                 dialogs.show();
                 dialogs.setProgress(100);
                 dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {

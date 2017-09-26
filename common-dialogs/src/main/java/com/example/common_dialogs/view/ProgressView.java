@@ -83,11 +83,11 @@ public class ProgressView extends View {
         setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         //基本设置
         padding = ProgressUtils.dp2px(context,0);
-        textSize = ProgressUtils.sp2px(context,22);
+        textSize = ProgressUtils.sp2px(context,19);
         //画笔
         textPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         textPaint.setTextSize(textSize);
-        textPaint.setColor(Color.BLACK);
+        textPaint.setColor(0xff333333);
         textPaint.setTextAlign(Paint.Align.CENTER);
         textPaint.setAntiAlias(true);
 
@@ -148,23 +148,13 @@ public class ProgressView extends View {
 
         drawBackground(canvas);
         drawProgress(canvas);
-        drawText(canvas);
-        drawRocket(canvas);
+        drawTextAndRocket(canvas);
+
 
     }
-    //绘制火箭
-    private void drawRocket(Canvas canvas) {
-        if (valueInt == 0){
 
-        }else if (valueInt >= 100) {
-
-        } else if (valueInt > 0 && valueInt < 100) {
-
-             canvas.drawBitmap(rocket,  currentProgress + padding + ProgressUtils.dp2px(context,10), mHeight / 2-rocket.getHeight()/2, rocketPaint);
-        }
-    }
-    //绘制百分比
-    private void drawText(Canvas canvas) {
+    //绘制百分比、火箭
+    private void drawTextAndRocket(Canvas canvas) {
         float textWidth = textPaint.measureText(progressText);
         float progress = currentProgress + padding;
         float progressRead=padding+ textWidth / 2+ProgressUtils.dp2px(context,5);
@@ -174,13 +164,24 @@ public class ProgressView extends View {
 
         if (valueInt == 0) {
             canvas.drawText(progressText, progressRead, mHeight/2+i, textPaint);
+
+
         } else if (valueInt > 0 && valueInt <= 100&&currentProgress>=progressRead) {
             progress = progress - textWidth / 2 - ProgressUtils.dp2px(context,5);
-            canvas.drawText(progressText, progress, mHeight/2+i, textPaint);
+
+            if (progress<progressRead){
+                canvas.drawText(progressText, progressRead, mHeight/2+i, textPaint);
+            }else{
+                canvas.drawText(progressText, progress, mHeight/2+i, textPaint);
+            }
+
+            canvas.drawBitmap(rocket,  currentProgress + padding + ProgressUtils.dp2px(context,10), mHeight / 2-rocket.getHeight()/2, rocketPaint);
+
         }else if (valueInt > 0 && valueInt <= 100&&currentProgress<progressRead){
             canvas.drawText(progressText, progressRead, mHeight/2+i, textPaint);
-        }
 
+            canvas.drawBitmap(rocket,  progressRead + ProgressUtils.dp2px(context,10), mHeight / 2-rocket.getHeight()/2, rocketPaint);
+        }
 
     }
 
@@ -208,7 +209,7 @@ public class ProgressView extends View {
     //设置进度
     public void setProgressText(int progress) {
         //火箭
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.rocket);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.rockert);
         rocket = ProgressUtils.zoomImg(bitmap, bitmap.getWidth() - ProgressUtils.dp2px(context,20), mHeight -ProgressUtils.dp2px(context,20));
         bitmap.recycle();
 
