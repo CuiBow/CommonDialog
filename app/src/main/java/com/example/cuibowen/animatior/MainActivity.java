@@ -27,14 +27,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ImageView imageView;
     private ImageView imageView2;
     private static final int FIRST_ANIMATOR=1;
-
-
+    private ProgressDialog dialogs;
     private Handler handler=new Handler(new Handler.Callback() {
         @Override
         public boolean handleMessage(Message message) {
             switch (message.what){
                 case FIRST_ANIMATOR:
                     animator2(imageView2);
+                    break;
+                case 2:
+                    dialogs.setProgress((Integer) message.obj);
                     break;
             }
             return false;
@@ -64,11 +66,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.imageView:
                 animator1(imageView);
-
-                final ProgressDialog dialogs=new ProgressDialog(MainActivity.this,true);
+                Message msg;
+                dialogs=new ProgressDialog(MainActivity.this,true);
                 dialogs.show();
-                dialogs.setProgress(100);
-                dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {
+                for (int i=1;i<=100;i++){
+                    msg=new Message();
+                    msg=handler.obtainMessage(2,
+                            i);
+                    handler.sendMessage(msg);
+                }
+
+                    dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {
                     @Override
                     public void onProgress(int progress) {
 

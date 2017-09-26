@@ -111,6 +111,14 @@ public class ProgressView extends View {
         rocketPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         rocketPaint.setAntiAlias(true);
         rocketPaint.setStrokeWidth(1);
+        //火箭
+        if (rocket==null){
+            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.rockert);
+            rocket = ProgressUtils.zoomImg(bitmap, bitmap.getWidth() - ProgressUtils.dp2px(context,20), mHeight -ProgressUtils.dp2px(context,20));
+            bitmap.recycle();
+        }
+
+
 
     }
 
@@ -208,10 +216,6 @@ public class ProgressView extends View {
 
     //设置进度
     public void setProgressText(int progress) {
-        //火箭
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.rockert);
-        rocket = ProgressUtils.zoomImg(bitmap, bitmap.getWidth() - ProgressUtils.dp2px(context,20), mHeight -ProgressUtils.dp2px(context,20));
-        bitmap.recycle();
 
         //进度条判断
         if (progress <= 0) {
@@ -220,7 +224,6 @@ public class ProgressView extends View {
             progress = 100;
         }
         currertX = progress;
-
         //创建动画
         animator = ValueAnimator.ofFloat(0, currertX);
         animator.setDuration(5000);
@@ -242,7 +245,6 @@ public class ProgressView extends View {
                 invalidate();
             }
         });
-
         animator.start();
     }
 
