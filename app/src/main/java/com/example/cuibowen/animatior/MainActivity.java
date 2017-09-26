@@ -56,6 +56,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         animator2(imageView);
 
 
+//
+//
+//        dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {
+//            @Override
+//            public void onProgress(int progress) {
+//
+//                if (progress==100){
+//                    dialogs.dismiss();
+//                }
+//            }
+//        });
+//
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                for (int i=1;i<=100;i++){
+//                    Message msg;
+//                    msg=new Message();
+//                    msg=handler.obtainMessage(2,
+//                            i);
+//                    handler.sendMessage(msg);
+//                }
+//            }
+//        }).start();
+
 
     }
 
@@ -66,25 +91,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.imageView:
                 animator1(imageView);
-                Message msg;
                 dialogs=new ProgressDialog(MainActivity.this,true);
                 dialogs.show();
-                for (int i=1;i<=100;i++){
-                    msg=new Message();
-                    msg=handler.obtainMessage(2,
-                            i);
-                    handler.sendMessage(msg);
-                }
 
-                    dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {
-                    @Override
-                    public void onProgress(int progress) {
-
-                        if (progress==100){
-                            dialogs.dismiss();
-                        }
-                    }
-                });
+                VersionUtil util=new VersionUtil();
+                util.setContent(this);
+//                util.setListener(new VersionUtil.OnProgressListener() {
+//                    @Override
+//                    public void progressListener(int progress) {
+//
+//                        dialogs.setProgress(progress);
+//
+//                    }
+//                });
+//                dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {
+//                    @Override
+//                    public void onProgress(int progress) {
+//
+//                    }
+//                });
 
                 break;
             case R.id.imageView2:

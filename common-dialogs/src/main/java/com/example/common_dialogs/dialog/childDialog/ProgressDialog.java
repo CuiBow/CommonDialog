@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -88,6 +89,7 @@ public class ProgressDialog extends BaseDialog implements View.OnClickListener{
     }
 
     public void setProgress(int progress){
+
         if (progressView!=null){
             progressView.setProgressText(progress);
             progressView.setOnProgressListener(new ProgressView.OnProgressListener() {

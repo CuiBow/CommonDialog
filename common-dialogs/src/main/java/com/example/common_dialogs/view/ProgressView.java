@@ -219,20 +219,24 @@ public class ProgressView extends View {
 
         //进度条判断
         if (progress <= 0) {
-            progress = 0;
+
+            return;
         } else if (progress >= 100) {
             progress = 100;
         }
+
         currertX = progress;
+
         //创建动画
         animator = ValueAnimator.ofFloat(0, currertX);
-        animator.setDuration(5000);
+        animator.setDuration(0);
         animator.setInterpolator(new LinearInterpolator());
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
                 float value = (float) valueAnimator.getAnimatedValue();
-                currentProgress = (int) (value * (mWidth - padding * 2) / 100);
+                currentProgress = value * mWidth / 100;
+
                 valueInt = ProgressUtils.format2Int(value);
                 progressText = valueInt + "%";
                 if (onProgressListener!=null){
