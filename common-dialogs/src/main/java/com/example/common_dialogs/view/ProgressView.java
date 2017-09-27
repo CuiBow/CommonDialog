@@ -234,7 +234,7 @@ public class ProgressView extends View {
 
         //创建动画
         animator = ValueAnimator.ofFloat(0, currertX);
-        animator.setDuration(5000);
+        animator.setDuration(100);
         animator.setInterpolator(new LinearInterpolator());
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
