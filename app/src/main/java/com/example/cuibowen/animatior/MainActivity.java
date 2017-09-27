@@ -58,28 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 //
 //
-//        dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {
-//            @Override
-//            public void onProgress(int progress) {
-//
-//                if (progress==100){
-//                    dialogs.dismiss();
-//                }
-//            }
-//        });
-//
-//        new Thread(new Runnable() {
-//            @Override
-//            public void run() {
-//                for (int i=1;i<=100;i++){
-//                    Message msg;
-//                    msg=new Message();
-//                    msg=handler.obtainMessage(2,
-//                            i);
-//                    handler.sendMessage(msg);
-//                }
-//            }
-//        }).start();
+
 
 
     }
@@ -93,23 +72,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 animator1(imageView);
                 dialogs=new ProgressDialog(MainActivity.this,true);
                 dialogs.show();
+                dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {
+                    @Override
+                    public void onProgress(int progress) {
 
-                VersionUtil util=new VersionUtil();
-                util.setContent(this);
-//                util.setListener(new VersionUtil.OnProgressListener() {
-//                    @Override
-//                    public void progressListener(int progress) {
+                        if (progress==100){
+                            dialogs.dismiss();
+                        }
+                    }
+                });
 //
-//                        dialogs.setProgress(progress);
-//
-//                    }
-//                });
-//                dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {
-//                    @Override
-//                    public void onProgress(int progress) {
-//
-//                    }
-//                });
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        for (int i=1;i<=100;i++){
+                            Message msg;
+                            msg=new Message();
+                            msg=handler.obtainMessage(2,
+                                    i);
+                            handler.sendMessage(msg);
+                        }
+                    }
+                }).start();
+
 
                 break;
             case R.id.imageView2:

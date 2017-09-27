@@ -80,7 +80,6 @@ public class DownLoadAPKUtil extends  Thread{
                 while ((len = inputStream.read(buf)) != -1) {
                     fos.write(buf, 0, len);
                     total += (len / 1024);
-                    Log.i("eee",total * 100 / fileSize+"");
                     msg = mHandler.obtainMessage(MSG_NET_RES_GET, total * 100 / fileSize);
                     mHandler.sendMessage(msg);
                 }

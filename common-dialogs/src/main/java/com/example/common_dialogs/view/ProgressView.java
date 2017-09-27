@@ -13,6 +13,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.os.Build;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -150,6 +151,7 @@ public class ProgressView extends View {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -194,14 +196,17 @@ public class ProgressView extends View {
     }
 
     //绘制进度条
+    @android.support.annotation.RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void drawProgress(Canvas canvas) {
-        if (valueInt==0){
-
+        if (valueInt<=7){
+            canvas.drawOval(padding + 2, 0,mHeight/2+5,mHeight - 4,progressPaint);
+            //canvas.drawRoundRect(padding + 2, 0 ,65 , mHeight - 4, mHeight, mHeight, progressPaint);
         }else{
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 canvas.drawRoundRect(padding + 2, 0 , currentProgress + padding - 2, mHeight - 4, mHeight, mHeight, progressPaint);
             }
         }
+
 
     }
 
@@ -229,7 +234,7 @@ public class ProgressView extends View {
 
         //创建动画
         animator = ValueAnimator.ofFloat(0, currertX);
-        animator.setDuration(0);
+        animator.setDuration(5000);
         animator.setInterpolator(new LinearInterpolator());
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
