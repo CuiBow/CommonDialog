@@ -70,30 +70,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.imageView:
                 animator1(imageView);
-                dialogs=new ProgressDialog(MainActivity.this,true);
-                dialogs.show();
-                dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {
-                    @Override
-                    public void onProgress(int progress) {
-
-                        if (progress==100){
-                            dialogs.dismiss();
-                        }
-                    }
-                });
+//                dialogs=new ProgressDialog(MainActivity.this,true);
+//                dialogs.show();
+//                dialogs.setProgressListener(new ProgressDialog.OnProgressListener() {
+//                    @Override
+//                    public void onProgress(int progress) {
 //
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        for (int i=1;i<=100;i++){
-                            Message msg;
-                            msg=new Message();
-                            msg=handler.obtainMessage(2,
-                                    i);
-                            handler.sendMessage(msg);
-                        }
-                    }
-                }).start();
+//                        if (progress==100){
+//                            dialogs.dismiss();
+//                        }
+//                    }
+//                });
+//
+                VersionUtil versionUtil=new VersionUtil();
+                versionUtil.setContent(this);
 
 
                 break;

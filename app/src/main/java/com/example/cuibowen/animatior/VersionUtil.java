@@ -77,7 +77,7 @@ public class VersionUtil  {
                         "下载失败",
                         Toast.LENGTH_SHORT).show();
             } else if (DownLoadAPKUtil.MSG_NET_RES_GET == msg.what) {
-
+                Log.i("eee",(Integer) msg.obj+"");
                 dialog.setProgress((Integer) msg.obj);
 //                (Integer) msg.obj
             } else if (DownLoadAPKUtil.MSG_DOWNLOAD_OK == msg.what) {
