@@ -20,18 +20,19 @@
 
 
             <ListView
+                android:scrollbars="none"
                 android:divider="#00000000"
                 android:dividerHeight="0dip"
                 android:id="@+id/list_view"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="90dp" />
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="25dp"
+                android:layout_marginBottom="10dp"
                 android:gravity="left"
                 android:text="@string/buy_content"
                 android:textColor="#444444"

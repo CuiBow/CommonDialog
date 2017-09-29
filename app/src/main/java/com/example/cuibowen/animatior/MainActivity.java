@@ -100,8 +100,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 HashMap<String,String> map2=new HashMap<>();
                 map2.put("content","同仁堂撒哒哒哒哒哒");
                 map2.put("canBuyCount","10");
+
+                HashMap<String,String> map3=new HashMap<>();
+                map3.put("content","同仁堂撒哒哒哒哒哒");
+                map3.put("canBuyCount","10");
+
+                HashMap<String,String> map4=new HashMap<>();
+                map4.put("content","同仁堂撒哒哒哒哒哒");
+                map4.put("canBuyCount","10");
+
                 list.add(map);
                 list.add(map2);
+                list.add(map3);
+                list.add(map4);
 
                 final ListDialog dialog=new ListDialog(MainActivity.this);
                 dialog.show();

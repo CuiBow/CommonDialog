@@ -6,8 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="eee" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
@@ -16,18 +15,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_common-dialogs_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_common-dialogs_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_common-dialogs_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_common-dialogs_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/VersionUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/VersionUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-dialogs/common-dialogs.iml" afterPath="$PROJECT_DIR$/common-dialogs/common-dialogs.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-dialogs/src/main/java/com/example/common_dialogs/view/ProgressView.java" afterPath="$PROJECT_DIR$/common-dialogs/src/main/java/com/example/common_dialogs/view/ProgressView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-dialogs/src/main/res/layout/list_item.xml" afterPath="$PROJECT_DIR$/common-dialogs/src/main/res/layout/list_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common-dialogs/src/main/res/layout/medicine_item.xml" afterPath="$PROJECT_DIR$/common-dialogs/src/main/res/layout/medicine_item.xml" />
     </list>
     <ignored path="CommonDialog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,11 +52,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProgressView.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProgressView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common-dialogs/src/main/java/com/example/common_dialogs/view/ProgressView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="236" column="30" selection-start-line="236" selection-start-column="30" selection-end-line="236" selection-end-column="30" />
+            <state relative-caret-position="190">
+              <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
               <folding>
                 <element signature="e#7323#8004#0" expanded="true" />
                 <element signature="e#8003#8004#0" expanded="true" />
@@ -72,12 +65,87 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="list_item.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common-dialogs/src/main/res/layout/list_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="medicine_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common-dialogs/src/main/res/layout/medicine_item.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Canvas.java" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/graphics/Canvas.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="16470">
               <caret line="1167" column="16" selection-start-line="1167" selection-start-column="16" selection-end-line="1167" selection-end-column="16" />
-              <folding />
+              <folding>
+                <element signature="e#0#91864#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#1997#1998#0" expanded="false" />
+                <element signature="e#2040#2041#0" expanded="false" />
+                <element signature="e#2900#2901#0" expanded="false" />
+                <element signature="e#2959#2960#0" expanded="false" />
+                <element signature="e#5112#5113#0" expanded="false" />
+                <element signature="e#5139#5140#0" expanded="false" />
+                <element signature="e#5491#5492#0" expanded="false" />
+                <element signature="e#5519#5520#0" expanded="false" />
+                <element signature="e#7407#7408#0" expanded="false" />
+                <element signature="e#7467#7468#0" expanded="false" />
+                <element signature="e#7627#7628#0" expanded="false" />
+                <element signature="e#7687#7688#0" expanded="false" />
+                <element signature="e#7850#7851#0" expanded="false" />
+                <element signature="e#7911#7912#0" expanded="false" />
+                <element signature="e#8376#8377#0" expanded="false" />
+                <element signature="e#8407#8408#0" expanded="false" />
+                <element signature="e#9173#9174#0" expanded="false" />
+                <element signature="e#9213#9214#0" expanded="false" />
+                <element signature="e#9487#9488#0" expanded="false" />
+                <element signature="e#9530#9531#0" expanded="false" />
+                <element signature="e#9806#9807#0" expanded="false" />
+                <element signature="e#9849#9850#0" expanded="false" />
+                <element signature="e#19535#19536#0" expanded="false" />
+                <element signature="e#19599#19600#0" expanded="false" />
+                <element signature="e#20550#20551#0" expanded="false" />
+                <element signature="e#20612#20613#0" expanded="false" />
+                <element signature="e#20826#20827#0" expanded="false" />
+                <element signature="e#20884#20885#0" expanded="false" />
+                <element signature="e#21541#21542#0" expanded="false" />
+                <element signature="e#21601#21602#0" expanded="false" />
+                <element signature="e#22262#22263#0" expanded="false" />
+                <element signature="e#22319#22320#0" expanded="false" />
+                <element signature="e#29057#29058#0" expanded="false" />
+                <element signature="e#29115#29116#0" expanded="false" />
+                <element signature="e#30779#30780#0" expanded="false" />
+                <element signature="e#30813#30814#0" expanded="false" />
+                <element signature="e#31463#31464#0" expanded="false" />
+                <element signature="e#31513#31514#0" expanded="false" />
+                <element signature="e#36405#36406#0" expanded="false" />
+                <element signature="e#36450#36451#0" expanded="false" />
+                <element signature="e#36978#36979#0" expanded="false" />
+                <element signature="e#37027#37028#0" expanded="false" />
+                <element signature="e#62608#62609#0" expanded="false" />
+                <element signature="e#62658#62659#0" expanded="false" />
+                <element signature="e#81292#81293#0" expanded="false" />
+                <element signature="e#81328#81329#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,7 +168,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
               <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,8 +178,18 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="82" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="109" column="20" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common-dialogs/src/main/java/com/example/common_dialogs/adapter/ListAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,39 +200,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="205">
               <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="56" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/FileUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DownLoadAPKUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/DownLoadAPKUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -2981,9 +3028,11 @@
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/common-dialogs/src/main/java/com/example/common_dialogs/dialog/childDialog/ProgressDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/DownLoadAPKUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/VersionUtil.java" />
         <option value="$PROJECT_DIR$/common-dialogs/src/main/java/com/example/common_dialogs/view/ProgressView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/MainActivity.java" />
+        <option value="$PROJECT_DIR$/common-dialogs/src/main/res/layout/medicine_item.xml" />
+        <option value="$PROJECT_DIR$/common-dialogs/src/main/res/layout/list_item.xml" />
       </list>
     </option>
   </component>
@@ -3036,6 +3085,28 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="common-dialogs" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CommonDialog" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common-dialogs" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -3090,6 +3161,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="common_dialogs" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CommonDialog" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common-dialogs" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -3487,7 +3568,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36476427" sideWeight="0.67167383" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36476427" sideWeight="0.67167383" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3507,7 +3589,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3529,22 +3610,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -3627,7 +3692,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3802,13 +3869,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-dialogs/src/main/java/com/example/common_dialogs/adapter/ListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3828,7 +3889,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3836,7 +3899,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
           <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3844,7 +3909,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3863,7 +3930,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16470">
           <caret line="1167" column="16" selection-start-line="1167" selection-start-column="16" selection-end-line="1167" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#0#91864#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1997#1998#0" expanded="false" />
+            <element signature="e#2040#2041#0" expanded="false" />
+            <element signature="e#2900#2901#0" expanded="false" />
+            <element signature="e#2959#2960#0" expanded="false" />
+            <element signature="e#5112#5113#0" expanded="false" />
+            <element signature="e#5139#5140#0" expanded="false" />
+            <element signature="e#5491#5492#0" expanded="false" />
+            <element signature="e#5519#5520#0" expanded="false" />
+            <element signature="e#7407#7408#0" expanded="false" />
+            <element signature="e#7467#7468#0" expanded="false" />
+            <element signature="e#7627#7628#0" expanded="false" />
+            <element signature="e#7687#7688#0" expanded="false" />
+            <element signature="e#7850#7851#0" expanded="false" />
+            <element signature="e#7911#7912#0" expanded="false" />
+            <element signature="e#8376#8377#0" expanded="false" />
+            <element signature="e#8407#8408#0" expanded="false" />
+            <element signature="e#9173#9174#0" expanded="false" />
+            <element signature="e#9213#9214#0" expanded="false" />
+            <element signature="e#9487#9488#0" expanded="false" />
+            <element signature="e#9530#9531#0" expanded="false" />
+            <element signature="e#9806#9807#0" expanded="false" />
+            <element signature="e#9849#9850#0" expanded="false" />
+            <element signature="e#19535#19536#0" expanded="false" />
+            <element signature="e#19599#19600#0" expanded="false" />
+            <element signature="e#20550#20551#0" expanded="false" />
+            <element signature="e#20612#20613#0" expanded="false" />
+            <element signature="e#20826#20827#0" expanded="false" />
+            <element signature="e#20884#20885#0" expanded="false" />
+            <element signature="e#21541#21542#0" expanded="false" />
+            <element signature="e#21601#21602#0" expanded="false" />
+            <element signature="e#22262#22263#0" expanded="false" />
+            <element signature="e#22319#22320#0" expanded="false" />
+            <element signature="e#29057#29058#0" expanded="false" />
+            <element signature="e#29115#29116#0" expanded="false" />
+            <element signature="e#30779#30780#0" expanded="false" />
+            <element signature="e#30813#30814#0" expanded="false" />
+            <element signature="e#31463#31464#0" expanded="false" />
+            <element signature="e#31513#31514#0" expanded="false" />
+            <element signature="e#36405#36406#0" expanded="false" />
+            <element signature="e#36450#36451#0" expanded="false" />
+            <element signature="e#36978#36979#0" expanded="false" />
+            <element signature="e#37027#37028#0" expanded="false" />
+            <element signature="e#62608#62609#0" expanded="false" />
+            <element signature="e#62658#62659#0" expanded="false" />
+            <element signature="e#81292#81293#0" expanded="false" />
+            <element signature="e#81328#81329#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3871,14 +3987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="82" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -3893,13 +4001,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common-dialogs/src/main/java/com/example/common_dialogs/view/ProgressView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="236" column="30" selection-start-line="236" selection-start-column="30" selection-end-line="236" selection-end-column="30" />
+        <state relative-caret-position="190">
+          <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
           <folding>
             <element signature="e#7323#8004#0" expanded="true" />
             <element signature="e#8003#8004#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-dialogs/src/main/java/com/example/common_dialogs/adapter/ListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/cuibowen/animatior/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="109" column="20" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-dialogs/src/main/res/layout/medicine_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-dialogs/src/main/res/layout/list_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>
