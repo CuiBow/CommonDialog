@@ -49,7 +49,7 @@ public class ListDialog<T> extends BaseDialog implements View.OnClickListener{
 
     }
     private void init(){
-        setCancelable(true);
+        setCancelable(false);
 
         View headView= HeadFactory.create(HeaderType.BUY_ID,context);
         addFirstView(headView);
