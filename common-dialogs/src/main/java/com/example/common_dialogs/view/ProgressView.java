@@ -184,8 +184,11 @@ public class ProgressView extends View {
             }else{
                 canvas.drawText(progressText, progress, mHeight/2+i, textPaint);
             }
-
             canvas.drawBitmap(rocket,  currentProgress + padding + ProgressUtils.dp2px(context,10), mHeight / 2-rocket.getHeight()/2, rocketPaint);
+            if (valueInt==100){
+                //释放资源
+                cancel();
+            }
 
         }else if (valueInt > 0 && valueInt <= 100&&currentProgress<progressRead){
             canvas.drawText(progressText, progressRead, mHeight/2+i, textPaint);
@@ -246,8 +249,7 @@ public class ProgressView extends View {
                 progressText = valueInt + "%";
                 if (onProgressListener!=null){
                     if(valueInt==100){
-                        //释放资源
-                        cancel();
+
                     }
                     onProgressListener.onProgress(valueInt);
                 }
