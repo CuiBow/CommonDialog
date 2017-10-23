@@ -151,7 +151,6 @@ public class ProgressView extends View {
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
@@ -199,15 +198,12 @@ public class ProgressView extends View {
     }
 
     //绘制进度条
-    @android.support.annotation.RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void drawProgress(Canvas canvas) {
         if (valueInt<=7){
-            //canvas.drawOval(padding + 2, 0,mHeight/2+5,mHeight - 4,progressPaint);
-            canvas.drawRoundRect(padding + 2, 0 ,65 , mHeight - 4, mHeight, mHeight, progressPaint);
+            canvas.drawOval(new RectF(padding + 2, 0,mHeight/2+5,mHeight - 4),progressPaint);
+           // canvas.drawRoundRect(padding + 2, 0 ,65 , mHeight - 4, mHeight, mHeight, progressPaint);
         }else{
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                canvas.drawRoundRect(padding + 2, 0 , currentProgress + padding - 2, mHeight - 4, mHeight, mHeight, progressPaint);
-            }
+            canvas.drawRoundRect(new RectF(padding + 2, 0 , currentProgress + padding - 2, mHeight - 4), mHeight, mHeight, progressPaint);
         }
 
 
@@ -215,10 +211,7 @@ public class ProgressView extends View {
 
     //绘制背景
     private void drawBackground(Canvas canvas) {
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            canvas.drawRoundRect(padding, 0, mWidth - padding, mHeight, mHeight, mHeight, backPaint);
-        }
+            canvas.drawRoundRect(new RectF(padding, 0, mWidth - padding, mHeight), mHeight, mHeight, backPaint);
     }
 
 
