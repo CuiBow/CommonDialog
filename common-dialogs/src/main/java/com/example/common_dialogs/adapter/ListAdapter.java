@@ -45,6 +45,5 @@ public class ListAdapter extends CommonAdapter<HashMap<String,String>> {
         ssb.setSpan(new ForegroundColorSpan(0xff1aa98c), content.length()+6, content.length()+6+count.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         contents.setText(ssb);
 
-
     }
 }
